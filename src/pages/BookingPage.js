@@ -4,7 +4,7 @@ import TicketCard from '../components/TicketCard';
 
 const BookingPage = () => {
     const [tickets, setTickets] = useState([]);
-    const [editTicket, setEditTicket] = useState(null); // Estado para boleto en edición
+    const [editTicket, setEditTicket] = useState(null);
 
     useEffect(() => {
         const storedTickets = JSON.parse(localStorage.getItem('tickets')) || [];
@@ -23,7 +23,7 @@ const BookingPage = () => {
         );
         setTickets(updatedTickets);
         localStorage.setItem('tickets', JSON.stringify(updatedTickets));
-        setEditTicket(null); // Limpiar el estado de edición
+        setEditTicket(null);
     };
 
     const handleDeleteTicket = (ticketToDelete) => {

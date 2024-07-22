@@ -1,4 +1,3 @@
-// src/components/TicketCard.js
 import React from 'react';
 
 const TicketCard = ({ ticket, onEdit, onDelete }) => {

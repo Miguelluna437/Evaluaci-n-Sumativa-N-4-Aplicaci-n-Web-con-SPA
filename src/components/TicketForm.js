@@ -32,7 +32,7 @@ const TicketForm = ({ onAddTicket, editTicket, onUpdateTicket }) => {
             return;
         }
         const ticket = {
-            id: editTicket ? editTicket.id : Date.now(), // Generate a unique ID for the new ticket
+            id: editTicket ? editTicket.id : Date.now(),
             passengerName,
             destination,
             numberOfTickets,
@@ -94,8 +94,8 @@ const TicketForm = ({ onAddTicket, editTicket, onUpdateTicket }) => {
                     className="form-control"
                     value={numberOfTickets}
                     onChange={(e) => setNumberOfTickets(e.target.value)}
-                    min="1"  // Establece el valor mínimo permitido
-                    max="12" // Establece el valor máximo permitido
+                    min="1"
+                    max="12"
                     required
                 />
             </div>

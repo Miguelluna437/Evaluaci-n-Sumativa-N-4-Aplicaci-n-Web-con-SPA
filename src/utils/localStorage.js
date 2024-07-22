@@ -1,4 +1,3 @@
-// src/utils/localStorage.js
 export const saveTerminalToLocalStorage = (terminal) => {
     const terminals = JSON.parse(localStorage.getItem('terminals')) || [];
     terminals.push(terminal);
